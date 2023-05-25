@@ -47,14 +47,12 @@
 :root {
   -webkit-tap-highlight-color: transparent;
   -webkit-text-size-adjust: 100%;
-  -moz-text-size-adjust: 100%;
-       text-size-adjust: 100%;
+  text-size-adjust: 100%;
   cursor: default;
   line-height: 1.5;
   overflow-wrap: break-word;
   -moz-tab-size: 4;
-  -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
 }
 
 html, body {
@@ -65,8 +63,7 @@ html, body {
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 
 img, video {
@@ -105,7 +102,7 @@ body {
   font-family: "kr", "GLCG";
   letter-spacing: -0.05em;
   font-weight: 400;
-  color: #191b1d;
+  color: #2a1400;
 }
 
 .blind {
@@ -130,7 +127,8 @@ a .point-box, .point-rd .point-box {
   flex-direction: column;
   align-items: start;
   transition: 0.3s;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(255, 99, 2, 0.2);
+  color: #fff;
 }
 a .point-box .point, .point-rd .point-box .point {
   display: flex;
@@ -139,8 +137,7 @@ a .point-box .point, .point-rd .point-box .point {
 }
 a .point-box .point.ver2, .point-rd .point-box .point.ver2 {
   overflow: hidden;
-  background: #000;
-  color: #fff;
+  background: #ff5f03;
   border-radius: 20px;
 }
 a:hover .point-box, .point-rd:hover .point-box {
@@ -157,7 +154,7 @@ a:hover .point-box, .point-rd:hover .point-box {
   z-index: 20;
   display: flex;
   font-size: 16px;
-  background-color: #ccc;
+  background-color: #ffb300;
   transition: 0.3s;
 }
 .header .effect {
@@ -199,10 +196,10 @@ a:hover .point-box, .point-rd:hover .point-box {
 }
 .header h1 {
   z-index: 20;
-  font-weight: 500;
-  transition: 0.3;
-  font-size: 18px;
   width: 25%;
+}
+.header h1 img {
+  width: 60%;
 }
 .header .nav-list {
   position: relative;
@@ -340,7 +337,7 @@ a:hover .point-box, .point-rd:hover .point-box {
   padding: 7px;
 }
 .footer .group-top .inner1 .btn-direct1 .point-box {
-  background: #000;
+  background: #d27b02;
   color: #fff;
 }
 .footer .group-bottom {
@@ -371,7 +368,7 @@ a:hover .point-box, .point-rd:hover .point-box {
   color: rgba(0, 0, 0, 0.39);
 }
 .footer .cookie p span {
-  color: #191b1d;
+  color: #2a1400;
   margin-left: 5px;
 }
 .footer .cookie .point-rd {
@@ -382,12 +379,12 @@ a:hover .point-box, .point-rd:hover .point-box {
   padding: 7px 15px;
 }
 .footer .cookie .btn-direct .point-box {
-  background: #000;
+  background: #ff280c;
   color: #fff;
 }
 
 .sc-intro {
-  background: #cdcecf;
+  background: #ffb812;
   width: 100%;
   height: 80vh;
   padding: 15vh 0;
@@ -396,6 +393,7 @@ a:hover .point-box, .point-rd:hover .point-box {
   margin-bottom: 40px;
   font-size: 70px;
   font-weight: 500;
+  color: #422700;
 }
 .sc-intro h2 span {
   display: block;
@@ -405,6 +403,7 @@ a:hover .point-box, .point-rd:hover .point-box {
 }
 .sc-intro h2 .white {
   color: #fff;
+  margin-top: 20px;
 }
 .sc-intro .inner {
   display: flex;
@@ -422,7 +421,7 @@ a:hover .point-box, .point-rd:hover .point-box {
   position: relative;
   width: 150px;
   height: 150px;
-  border: 1px solid rgb(143, 142, 142);
+  border: 1px solid rgb(66, 43, 0);
   border-radius: 50%;
 }
 .sc-intro .group-intro i::after {
@@ -442,7 +441,7 @@ a:hover .point-box, .point-rd:hover .point-box {
   left: 80px;
   width: 150px;
   height: 150px;
-  border: 1px solid rgb(143, 142, 142);
+  border: 1px solid rgb(66, 43, 0);
   border-radius: 50%;
 }
 .sc-intro .group-intro p {
@@ -465,7 +464,7 @@ a:hover .point-box, .point-rd:hover .point-box {
   left: 0;
   width: 100%;
   height: 100%;
-  background: #cdcecf;
+  background: #ffb812;
   z-index: 1;
 }
 .sc-video .cursor {
@@ -537,13 +536,14 @@ a:hover .point-box, .point-rd:hover .point-box {
   gap: 20px;
 }
 .sc-products .product-item .text-area .num-wrap .item-num {
-  width: 25px;
-  height: 25px;
+  font-size: 30px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #000;
+  background: rgba(202, 77, 0, 0.7843137255);
   color: #fff;
 }
 .sc-products .product-item .text-area .num-wrap .link-more {
@@ -581,8 +581,7 @@ a:hover .point-box, .point-rd:hover .point-box {
   left: 0;
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: 0.3s;
 }
 .sc-products .product-item .img-area .img-wrap .img-box .btn-plus {
@@ -608,19 +607,23 @@ a:hover .point-box, .point-rd:hover .point-box {
 }
 .sc-products .product-item .img-area .img-wrap .text-box .hash span {
   padding: 5px 10px;
-  background: #ccc;
+  background: #d47b0f;
   border-radius: 14px;
   color: #fff;
 }
 
 .sc-capability {
-  background: #191b1d;
+  background: #ff9e0b;
   color: #fff;
   padding: 10vw 0;
   position: relative;
 }
 .sc-capability .inner {
   display: flex;
+}
+.sc-capability .inner h2 {
+  font-size: 50px;
+  font-weight: 500;
 }
 .sc-capability .left-area {
   width: 50%;
@@ -716,7 +719,11 @@ a:hover .point-box, .point-rd:hover .point-box {
 .sc-introduction {
   padding: 10vw 0;
   overflow: hidden;
-  background: #ccc;
+  background: #f6de87;
+}
+.sc-introduction h2 {
+  font-size: 40px;
+  font-weight: 500;
 }
 .sc-introduction .group-text {
   display: flex;
@@ -830,71 +837,4 @@ a:hover .point-box, .point-rd:hover .point-box {
 }
 .sc-introduction .group-sd .control-area .swiper-button-disabled .point-box {
   transform: translateY(0);
-}
-
-.sc-insights {
-  padding: 100px 0;
-  border-bottom: 1px solid rgba(25, 27, 29, 0.1);
-}
-.sc-insights .group-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 200px;
-}
-.sc-insights .group-title h2 {
-  font-size: 80px;
-  font-weight: 500;
-}
-.sc-insights .group-title a {
-  height: 30px;
-  overflow: hidden;
-}
-.sc-insights .group-title a .point {
-  padding: 7px;
-}
-.sc-insights .group-insights {
-  margin-bottom: 200px;
-}
-.sc-insights .group-insights .insights-list {
-  display: flex;
-  gap: 2vw;
-}
-.sc-insights .group-insights .insights-list .insights-item {
-  flex: 1;
-}
-.sc-insights .group-insights .insights-list .insights-item a {
-  display: block;
-  border: 1px solid rgba(25, 27, 29, 0.1);
-  transition: 0.3s;
-}
-.sc-insights .group-insights .insights-list .insights-item a .img-box {
-  overflow: hidden;
-}
-.sc-insights .group-insights .insights-list .insights-item a .img-box img {
-  transition: 0.3s;
-}
-.sc-insights .group-insights .insights-list .insights-item a:hover {
-  border: 1px solid rgba(0, 0, 0, 0.247);
-}
-.sc-insights .group-insights .insights-list .insights-item a:hover img {
-  transform: scale(1.1);
-}
-.sc-insights .group-insights .insights-list .insights-item a .text-box {
-  padding: 2vw;
-  height: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.sc-insights .group-insights .insights-list .insights-item a .text-box p {
-  font-size: 20px;
-}
-.sc-insights .group-insights .insights-list .insights-item a .text-box .desc {
-  font-size: 14px;
-}
-.sc-insights .group-insights .insights-list .insights-item a .text-box .desc span {
-  display: block;
-  color: rgba(0, 0, 0, 0.493);
-  margin-bottom: 5px;
 }

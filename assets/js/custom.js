@@ -48,7 +48,6 @@ $(function () {
                 trigger:element,
                 start:'100% 100%',
                 end:'100% 0%',
-                markers:true,
                 scrub:0,
                 // pin:true,
             },
@@ -63,36 +62,6 @@ $(function () {
 
 
     //구역 마다 메뉴 색 변경
-    $(window).scroll(function () {
-        var curr = $(this).scrollTop();
-        bg = $('.sc-intro').offset().top;
-        bg1 = $('.sc-video').offset().top;
-        bg2 = $('.sc-capability').offset().top;
-        bg3 = $('.sc-introduction').offset().top;
-        bg4 = $('.sc-insights').offset().top;
-        if(curr > bg){
-            $('.header').css('background-color','#ccc')
-            $('.header').css('color','#191b1d')
-        }
-        if(curr > bg1){
-            $('.header').css('background-color','#fff')
-            $('.header').css('color','#191b1d')
-            $('.header .head-point-wrap').css('background-color','rgba(0,0,0,0.445)')
-        }
-        if(curr > bg2){
-            $('.header').css('background-color','#000')
-            $('.header').css('color','#fff')
-            $('.header .head-point-wrap').css('background-color','rgba(255, 255, 255, 0.445)')
-        }
-        if(curr > bg3){
-            $('.header').css('background-color','#ccc')
-            $('.header').css('color','#191b1d')
-            $('.header .head-point-wrap').css('background-color','rgba(0,0,0,0.445)')
-        }
-        if(curr > bg4){
-            $('.header').css('background-color','#fff')
-        }
-    })
 
 
 

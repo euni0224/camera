@@ -17,15 +17,15 @@ a,.point-rd{
         flex-direction: column;
         align-items: start;
         transition: 0.3s;
-        background: rgba(0,0,0,0.2);
+        background: rgba(255, 99, 2, 0.2);
+        color: #fff;
         .point{
             display: flex; 
             justify-content: center;
             align-items: center;
             &.ver2{
                 overflow: hidden;
-                background: #000;
-                color: #fff;
+                background: #ff5f03;
                 border-radius: 20px;
             }
         }
